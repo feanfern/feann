@@ -1,0 +1,27 @@
+package mystack;
+
+import static org.junit.Assert.*;
+
+public class TestMyStack {
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testNewStackMustbeEmpty() {
+		//Determine Input Data.
+
+		//Do Steps and Capture Output.
+		MyStack stack = new MyStack();
+		int size = stack.getNumberOfElms();
+
+		//Compare actual results with expected results.
+		int expectedSize = 0;
+		assertEquals(
+			"The number of elements in a new stack must be 0.",
+			expectedSize, size);
+}
